@@ -1,0 +1,99 @@
+.featueres {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.featueres-item {
+  margin: 15px;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background: $bg-section-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+.quality-antenna {
+  &::before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+}
+
+.quality-clock {
+  &::before {
+    background-image: url(../images/icons/clock.svg);
+  }
+}
+
+.quality-diagram {
+  &::before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+}
+
+.quality-astronaut {
+  &::before {
+    background-image: url(../images/icons/astronaut.svg);
+  }
+}
+
+.featueres-title {
+  font-weight: $bold-font-weight;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.quality:not(:last-child) {
+  margin-right: 30px;
+}
+
+.featueres .featueres-item {
+  padding-inline-start: 0px;
+}
+
+.featueres-title {
+  margin-bottom: 10px;
+
+  font-family: $third-font;
+  font-weight: $bold-font-weight;
+  font-size: $primary-font-size;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.featueres-link {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: $primary-font-size;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}

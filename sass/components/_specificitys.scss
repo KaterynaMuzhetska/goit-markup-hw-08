@@ -1,0 +1,76 @@
+.specificitys {
+  display: none;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.specificity-title {
+  margin-bottom: 30px;
+
+  font-family: $third-font;
+  font-weight: $bold-font-weight;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $fourth-font-size;
+    margin-bottom: 50px;
+  }
+}
+
+.specif-list {
+  @extend %list;
+
+  position: relative;
+
+  display: flex;
+
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.specif-item {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*.specif-box-list p {
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 70px;
+  padding: 27px;
+  text-align: center;
+  background-color: $specif-box-color;
+}*/
+
+.specif-box-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  color: $white;
+
+  text-align: center;
+  font-family: $third-font;
+  font-weight: $bold-font-weight;
+  line-height: 1.14;
+  font-size: $primary-font-size;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  background-color: $specif-box-color;
+}

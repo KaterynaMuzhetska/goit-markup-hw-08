@@ -1,0 +1,140 @@
+.team-bg {
+  background: $bg-section-color;
+}
+
+.all-team {
+  @extend %list;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team {
+  margin-bottom: 30px;
+
+  font-family: $third-font;
+  font-weight: $bold-font-weight;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $fourth-font-size;
+    margin-bottom: 50px;
+  }
+}
+
+.all-team .item + .item {
+  margin-left: 30px;
+}
+
+.team-item {
+  max-width: 450px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: $white;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    padding: 30px 32px;
+  }
+}
+
+.team-title {
+  margin-bottom: 10px;
+  font-family: $second-font;
+  font-weight: $medium-font-weight;
+  font-size: $second-font-size;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+
+.team-link {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: $second-font-size;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: $title-text-color;
+}
+
+.networks {
+  @extend %list;
+
+  display: inline-flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.our-networks {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.social-links {
+  @extend %link;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $icon-color;
+  border-radius: 50%;
+
+  transition: background-color 250ms $animation-timing,
+    color 250ms $animation-timing;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white;
+    outline: none;
+  }
+}
+
+.networks .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
